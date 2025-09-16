@@ -1,6 +1,8 @@
-package com.example.composable.Halaman
+package com.example.composable.Tugas_1.Halaman
 
 import android.content.Intent
+import android.service.autofill.OnClickAction
+import android.view.View.OnClickListener
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
@@ -17,23 +19,24 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 
 @Composable
-fun nama (name: String, navController: NavController){
+fun NIM (NIM: String, navController: NavController){
     Column (
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ){
-        Text("Nama Lengkap : $name", fontSize = 18.sp)
-        Spacer(modifier = Modifier.size(12.dp))
-        Button(onClick = { navController.navigate("NIM") }) {
-            Text("Next", fontSize = 16.sp)
+        Text("NIM : $NIM", fontSize = 18.sp)
+        Spacer(modifier = Modifier.size(18.dp))
+        Button(onClick = {
+            navController.navigate("nama")
+        }) {
+            Text("Kembali", fontSize = 16.sp)
         }
     }
-
 }
 
 //@Preview
 //@Composable
-//fun TampilkanNama (){
-//    nama("Ciello Belleza Zukhrufi S")
+//fun tampilkan_nim(){
+//    NIM("235150701111030")
 //}
