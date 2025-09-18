@@ -31,10 +31,7 @@ class CalculatorViewModel : ViewModel() {
         display = result ?: "Error"
     }
 
-    /**
-     * Evaluate expression supporting + - * / and decimal numbers.
-     * Uses shunting-yard + evaluation. Returns result as string (trim .0).
-     */
+
     private fun evaluateExpression(expr: String): String? {
         try {
             val tokens = tokenize(expr)

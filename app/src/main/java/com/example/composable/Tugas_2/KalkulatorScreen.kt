@@ -40,11 +40,6 @@ fun CalculatorScreen(
             )
         }
 
-        // Buttons grid (4 x 4)
-        val btnModifier = Modifier
-            .weight(1f)
-            .fillMaxHeight()
-
         Column(modifier = Modifier.fillMaxWidth().height(420.dp)) {
             Row(modifier = Modifier.fillMaxWidth().weight(1f)) {
                 CalcButton("7", Modifier.weight(1f), onInput)

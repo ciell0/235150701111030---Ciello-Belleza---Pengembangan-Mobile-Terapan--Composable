@@ -23,6 +23,12 @@
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Composable">
+        </activity>
+        <activity
+            android:name=".Tugas_3.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Composable">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
